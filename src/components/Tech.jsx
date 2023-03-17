@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { isMobile } from "react-device-detect";
 
 import { technologies } from "../constants";
 import { styles } from "../styles";
@@ -28,17 +29,27 @@ const Tech = () => {
           viewport={{ once: true, amount: 0.25 }}
         >
           <div className="flex flex-row flex-wrap justify-center gap-14 max-w-5xl pt-10">
-            {technologies.map((technologies) => (
+            {technologies.map((technology) => (
               <motion.div
                 className="w-28 h-28"
-                key={technologies.name}
+                key={technology.name}
                 variants={sectionVariant}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.25 }}
               >
-                <BallCanvas icon={technologies.icon} />
-                <p className="flex justify-center">{technologies.name}</p>
+                {isMobile ? (
+                  <img
+                    src={technology.icon}
+                    alt={technology.name}
+                    className="h-28 w-28 object-fit rounded-xl flex justify-center items-center"
+                  />
+                ) : (
+                  <BallCanvas icon={technology.icon} />
+                )}
+                <p className="flex justify-center items-center">
+                  {technology.name}
+                </p>
               </motion.div>
             ))}
           </div>

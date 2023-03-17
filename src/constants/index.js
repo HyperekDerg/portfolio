@@ -2,8 +2,6 @@ import {
   blender,
   docker,
   express,
-  github,
-  html,
   javascript,
   mariadb,
   nodejs,
@@ -28,10 +26,6 @@ const navLinks = [
   ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
   {
     name: "JavaScript",
     icon: javascript,
@@ -59,10 +53,6 @@ const technologies = [
   {
     name: "MariaDB",
     icon: mariadb,
-  },
-  {
-    name: "Github",
-    icon: github,
   },
   {
     name: "Docker",

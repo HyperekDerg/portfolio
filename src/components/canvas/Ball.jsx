@@ -7,7 +7,7 @@ import {
   Preload,
   useTexture,
 } from "@react-three/drei";
-import { isMobile } from 'react-device-detect';
+import { isMobile } from "react-device-detect";
 
 import CanvasLoader from "../Loader";
 
@@ -18,7 +18,11 @@ const Ball = (props) => {
   const floatRotation = isMobile ? "0" : "1";
 
   return (
-    <Float speed={floatSpeed} rotationIntensity={floatRotation} floatIntensity={floatIntensinity}>
+    <Float
+      speed={floatSpeed}
+      rotationIntensity={floatRotation}
+      floatIntensity={floatIntensinity}
+    >
       <ambientLight intensity={0.25} />
       <directionalLight position={[0, 0, 0.05]} />
       <mesh castShadow receiveShadow scale={2.75}>
