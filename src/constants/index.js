@@ -1,17 +1,12 @@
 import {
   blender,
-  css,
   docker,
   express,
-  figma,
   github,
   html,
   javascript,
-  krita,
   mariadb,
-  mongodb,
   nodejs,
-  powershell,
   react,
   tailwind,
   vue
