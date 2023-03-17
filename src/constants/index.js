@@ -58,10 +58,6 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: "CSS3",
-    icon: css,
-  },
-  {
     name: "Tailwind CSS",
     icon: tailwind,
   },
@@ -70,32 +66,16 @@ const technologies = [
     icon: mariadb,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
     name: "Github",
     icon: github,
-  },
-  {
-    name: "Figma",
-    icon: figma,
   },
   {
     name: "Docker",
     icon: docker,
   },
   {
-    name: "Powershell",
-    icon: powershell,
-  },
-  {
     name: "Blender",
     icon: blender,
-  },
-  {
-    name: "Krita",
-    icon: krita,
   },
 ];
 
