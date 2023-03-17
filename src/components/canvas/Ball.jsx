@@ -7,21 +7,17 @@ import {
   Preload,
   useTexture,
 } from "@react-three/drei";
-import { isMobile } from "react-device-detect";
 
 import CanvasLoader from "../Loader";
 
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
-  const floatSpeed = isMobile ? "0" : "1.75";
-  const floatIntensinity = isMobile ? "0" : "2.75";
-  const floatRotation = isMobile ? "0" : "1";
 
   return (
     <Float
-      speed={floatSpeed}
-      rotationIntensity={floatRotation}
-      floatIntensity={floatIntensinity}
+      speed={1.75}
+      rotationIntensity={1}
+      floatIntensity={2}
     >
       <ambientLight intensity={0.25} />
       <directionalLight position={[0, 0, 0.05]} />
@@ -45,9 +41,8 @@ const Ball = (props) => {
 };
 
 const BallCanvas = ({ icon }) => {
-  const frameLoop = isMobile ? "demand" : "always";
   return (
-    <Canvas frameloop={frameLoop} gl={{ preserveDrawingBuffer: true }}>
+    <Canvas frameloop="always" gl={{ preserveDrawingBuffer: true }}>
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
         <Ball imgUrl={icon} />
