@@ -7,7 +7,10 @@ import {
   nodejs,
   react,
   tailwind,
-  vue
+  vue,
+  html,
+  css3,
+  mongodb
 } from '../assets'
 
 const navLinks = [
@@ -26,6 +29,10 @@ const navLinks = [
   ];
 
 const technologies = [
+  {
+    name: "HTML 5",
+    icon: html,
+  },
   {
     name: "JavaScript",
     icon: javascript,
@@ -51,8 +58,16 @@ const technologies = [
     icon: tailwind,
   },
   {
+    name: "CSS3",
+    icon: css3,
+  },
+  {
     name: "MariaDB",
     icon: mariadb,
+  },
+  {
+    name: "MongoDB",
+    icon: mongodb,
   },
   {
     name: "Docker",

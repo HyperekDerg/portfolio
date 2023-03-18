@@ -21,7 +21,7 @@ const Navbar = ({ setActive, active }) => {
     >
       <div className="w-full flex justify-between items-center max-w-10xl mx-auto">
         <Link
-          to="/"
+          to="./"
           className="flex items-center gap-2"
           onClick={() => {
             setActive("");
