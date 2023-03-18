@@ -4,6 +4,7 @@ import Hero from './Hero';
 import Contact from './Contact';
 import Works from './Works';
 import Tech from './Tech';
+import MobileOrientationAlert from './MobileOrientationAlert';
 
 export {
     About,
@@ -11,5 +12,6 @@ export {
     Navbar,
     Contact,
     Works,
-    Tech
+    Tech,
+    MobileOrientationAlert
 }
