@@ -10,7 +10,11 @@ import {
   vue,
   html,
   css3,
-  mongodb
+  mongodb,
+  php,
+  manjaro,
+  kali,
+  windows
 } from '../assets'
 
 const navLinks = [
@@ -74,8 +78,24 @@ const technologies = [
     icon: docker,
   },
   {
+    name: "PHP",
+    icon: php,
+  },
+  {
     name: "Blender",
     icon: blender,
+  },
+  {
+    name: "Manjaro Linux",
+    icon: manjaro,
+  },
+  {
+    name: "Kali Linux",
+    icon: kali,
+  },
+  {
+    name: "Windows",
+    icon: windows,
   },
 ];
 

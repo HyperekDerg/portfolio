@@ -16,6 +16,10 @@ import vue from './frameworks/icons8-vue-js.jpg';
 import mongodb from './frameworks/icons8-mongodb.jpg';
 import html from './frameworks/icons8-html-5.jpg';
 import css3 from './frameworks/icons8-css3.jpg';
+import php from './frameworks/icons8-php.jpg';
+import manjaro from './frameworks/manjaro-logo.jpg';
+import kali from './frameworks/icons8-kali.jpg';
+import windows from './frameworks/icons8-windows.jpg';
 
 
 
@@ -36,5 +40,9 @@ export {
     vue,
     mongodb,
     html,
-    css3
+    css3,
+    php,
+    manjaro,
+    kali,
+    windows
 }

@@ -1,10 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { isMobile } from "react-device-detect";
 
 import { technologies } from "../constants";
 import { styles } from "../styles";
-import { BallCanvas } from "./canvas";
 import { sectionVariant } from "../utils/motion";
 
 const Tech = () => {
@@ -22,7 +20,7 @@ const Tech = () => {
         </motion.div>
 
         <motion.div
-          className={`${styles.paddingX} flex justify-center pt-8`}
+          className={`${styles.paddingX} flex justify-center py-8`}
           variants={sectionVariant}
           initial="hidden"
           whileInView="visible"
@@ -38,21 +36,33 @@ const Tech = () => {
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.25 }}
               >
-                {isMobile ? (
-                  <img
-                    src={technology.icon}
-                    alt={technology.name}
-                    className="h-28 w-28 object-fit rounded-xl flex justify-center items-center"
-                  />
-                ) : (
-                  <BallCanvas icon={technology.icon} />
-                )}
+                <img
+                  src={technology.icon}
+                  alt={technology.name}
+                  className="h-28 w-28 object-fit rounded-xl flex justify-center items-center"
+                />
+
                 <p className="flex justify-center items-center">
                   {technology.name}
                 </p>
               </motion.div>
             ))}
           </div>
+        </motion.div>
+        <motion.div
+          variants={sectionVariant}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.25 }}
+          className={`${styles.paddingX} py-8`}
+        >
+          <p className="text-white underline underline-offset-4 text-center">
+            Please note that some of the technologies used in my personal
+            projects may not reflect my professional level of expertise.
+            However, I am constantly learning and improving my skills, and I am
+            committed to delivering high-quality work to my clients and
+            collaborators.
+          </p>
         </motion.div>
       </section>
     </>
