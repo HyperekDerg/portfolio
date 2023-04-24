@@ -27,7 +27,7 @@ export const Hero = ({ setActive}) => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.9, delay: 4 }}
+            transition={{ duration: 0.9, delay: 2 }}
             className="w-5 h-5 rounded-full bg-[#FFBE79]"
           />
         </div>
@@ -35,7 +35,7 @@ export const Hero = ({ setActive}) => {
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, delay: 4 }}
+          transition={{ duration: 0.6, delay: 2 }}
         >
           <h1 className={`${styles.heroHeadText}`}>
             Hi, I'm&nbsp;
@@ -47,7 +47,7 @@ export const Hero = ({ setActive}) => {
             className={`${styles.heroSubText} mt-2 text-white-100`}
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 4 }}
+            transition={{ duration: 0.5, delay: 2 }}
           >
             I'm&nbsp;
             {showTypewriter && (
@@ -82,7 +82,7 @@ export const Hero = ({ setActive}) => {
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6, delay: 4 }}
+        transition={{ duration: 0.6, delay: 2 }}
       >
         <div className="absolute xd:bottom-10 bottom-20 w-full flex justify-center items-center">
           <div>
