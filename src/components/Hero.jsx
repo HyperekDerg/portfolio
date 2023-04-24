@@ -11,7 +11,7 @@ export const Hero = ({ setActive}) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowTypewriter(true);
-    }, 4200);
+    }, 2100);
 
     return () => {
       clearTimeout(timer);
@@ -27,7 +27,7 @@ export const Hero = ({ setActive}) => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.9, delay: 2 }}
+            transition={{ duration: 0.9, delay: 0.5 }}
             className="w-5 h-5 rounded-full bg-[#FFBE79]"
           />
         </div>
@@ -82,7 +82,7 @@ export const Hero = ({ setActive}) => {
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6, delay: 2 }}
+        transition={{ duration: 0.6, delay: 0.5 }}
       >
         <div className="absolute xd:bottom-10 bottom-20 w-full flex justify-center items-center">
           <div>
@@ -90,6 +90,7 @@ export const Hero = ({ setActive}) => {
               href="#about"
               onClick={() => setActive("About")}
               className="flex justify-center items-center"
+              aria-label="Read more about Seminole tax hike"
             >
               <div className="w-[35px] h-[64px] rounded-3xl border-4 border-emerald-300 flex justify-center items-start p-2">
                 <motion.div
