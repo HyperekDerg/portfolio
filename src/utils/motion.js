@@ -14,3 +14,19 @@ export const sectionVariant = {
     }
   }
 };
+
+export const technlogyVariant = {
+  hidden: {
+    opacity: 0,
+    y: 50
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+      ease: "easeInOut",
+      staggerChildren: 0.4, // Stagger the animation of each child by 0.4 seconds
+    }
+  }
+};
