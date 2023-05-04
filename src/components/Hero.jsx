@@ -90,7 +90,7 @@ export const Hero = ({ setActive}) => {
               href="#about"
               onClick={() => setActive("About")}
               className="flex justify-center items-center"
-              aria-label="Read more about Seminole tax hike"
+              aria-label="Read more"
             >
               <div className="w-[35px] h-[64px] rounded-3xl border-4 border-emerald-300 flex justify-center items-start p-2">
                 <motion.div
