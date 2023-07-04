@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import menu from './menu.svg';
 import headshot from './headshot.png';
 import wip from './icons8-work-process-64.png';
+import warning from './icons8-low-risk-100.png';
 
 import blender from './frameworks/icons8-blender-3d.jpg';
 import docker from './frameworks/icons8-docker.jpg';
@@ -44,5 +45,6 @@ export {
     php,
     manjaro,
     kali,
-    windows
+    windows,
+    warning
 }

@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 import { motion } from "framer-motion";
 
 import { sectionVariant } from "../utils/motion";
 import { styles } from "../styles";
-import EmailJs from './EmailJs';
+import { warning } from "../assets";
 const Contact = () => {
   return (
     <>
@@ -19,13 +19,29 @@ const Contact = () => {
         </motion.div>
 
         <motion.div
-          className={`${styles.paddingX} flex justify-center items-center py-12`}
+          className={`${styles.paddingX} py-12`}
           variants={sectionVariant}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.25 }}
         >
-          <EmailJs />
+          <div className="w-full flex items-center justify-center">
+            <img src={warning} alt="warning" />
+          </div>
+          <div className="w-full flex items-center justify-center pt-8">
+          &nbsp;
+            <p>
+              Due to the misuse of messaging for spam purposes, contact is only
+              possible via the details given on the Github page:&nbsp;
+              <a
+                className="text-[#FFBE79]"
+                href="https://github.com/HyperekDerg"
+              >
+                https://github.com/HyperekDerg
+              </a>
+              .
+            </p>
+          </div>
         </motion.div>
       </section>
     </>
