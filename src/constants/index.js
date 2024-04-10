@@ -163,6 +163,14 @@ const history = [
     location: "Mińsk Mazowiecki, Poland",
   },
   {
+    name: "Volunteering at open events at the University of Siedlce",
+    description:
+      "Volunteering at the University of Siedlce's open events, I help create welcoming experiences for visitors, assisting in organization and guidance to showcase the university's community spirit.",
+    startDate: "Oct 2023",
+    endDate: "Present day",
+    location: "Siedlce, Poland",
+  },
+  {
     name: "UWS GENBIT research circle",
     description:
       "I am a member of the research circle at UWS, where I actively participate in various IT-related activities and events. As a member, I engage in discussions, workshops, and projects aimed at enhancing my skills and knowledge in the field of computer science.",
