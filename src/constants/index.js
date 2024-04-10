@@ -1,5 +1,4 @@
 import {
-  blender,
   docker,
   express,
   javascript,
@@ -26,6 +25,10 @@ const navLinks = [
   {
     id: "work",
     title: "Work",
+  },
+  {
+    id: "history",
+    title: "History",
   },
   {
     id: "contact",
@@ -107,12 +110,6 @@ const technologies = [
       "Familiar with PHP programming language, server-side scripting, and building dynamic web pages and applications.",
   },
   {
-    name: "Blender",
-    icon: blender,
-    description:
-      "Familiar with Blender 3D modeling and animation software, basic modeling tools, and creating simple 3D models and animations.",
-  },
-  {
     name: "Manjaro Linux",
     icon: manjaro,
     description:
@@ -150,10 +147,29 @@ const work = [
     description:
       "UWS Knowledge Base is a project carried out by GENBIT research circle. This project creates a full-stack application supporting frontend, backend and database.",
     starting_year: "March 17, 2024 ",
-    ending_year: "Presen  t day",
+    ending_year: "Present day",
     link: "https://gitlab.com/genbit-test-side/baza-wiedzy",
     technology: "React, Laravel, Docker, Node.js",
   },
 ];
 
-export { navLinks, technologies, work };
+const history = [
+  {
+    name: "Internship at Animativ Software House",
+    description:
+      "During my internship at Animativ, I specialized in Drupal backend development while also assisting with some frontend tasks and docker DevOps. Additionally, I worked on programming GMS modules to connect them with smart house applications.",
+    startDate: "Jul 2022",
+    endDate: "Aug 2022",
+    location: "Mińsk Mazowiecki, Poland",
+  },
+  {
+    name: "UWS GENBIT research circle",
+    description:
+      "I am a member of the research circle at UWS, where I actively participate in various IT-related activities and events. As a member, I engage in discussions, workshops, and projects aimed at enhancing my skills and knowledge in the field of computer science.",
+    startDate: "Jan 2024",
+    endDate: "Present day",
+    location: "Siedlce, Poland",
+  },
+];
+
+export { navLinks, technologies, work, history };

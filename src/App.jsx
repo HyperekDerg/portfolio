@@ -1,6 +1,15 @@
 import { BrowserRouter } from "react-router-dom";
 import { useState } from "react";
-import { About, Hero, Navbar, Contact, Works, Tech, MobileOrientationAlert } from "./components";
+import {
+  About,
+  Hero,
+  Navbar,
+  Contact,
+  Works,
+  Tech,
+  History,
+  MobileOrientationAlert,
+} from "./components";
 
 const App = () => {
   const [active, setActive] = useState("");
@@ -16,6 +25,7 @@ const App = () => {
         <About />
         <Tech />
         <Works />
+        <History />
         <div className="relative z-0">
           <Contact />
         </div>
