@@ -47,17 +47,15 @@ const About = () => {
             viewport={{ once: true, amount: 0.25 }}
           >
             <p className="max-w-4xl sm:text-[18px] text-[16px]">
-              Hi, I'm <span className="text-emerald-300">Jakub</span>, a
-              passionate programmer with 4 years of experience in website
-              development. I'm always excited to dive into new projects and love
-              to explore the latest technologies. I have a keen eye for detail
-              and take pride in writing clean, efficient, and maintainable code.
-              When I'm not coding, you can find me drawing, writing, photography
-              or creating 3D models, which further fuels my creativity and
-              problem-solving skills. I believe that collaboration and
-              communication are key to successful software development, and I'm
-              always eager to work with talented and motivated individuals to
-              bring innovative ideas to life.
+              Hi, I'm <span className="text-emerald-500">Jakub</span>, a
+              passionate programmer focusing on web development. My experience
+              is defined by a commitment to clean, efficient code and a drive
+              for continuous learning through personal projects and study
+              circles. Outside of coding, my creativity thrives in drawing,
+              photography and 3D modeling, enhancing my problem-solving skills.
+              I value collaboration and am always ready to join forces with
+              talented individuals to bring innovative ideas to life. Translated
+              with DeepL.com (free version)
             </p>
           </motion.div>
           <motion.div

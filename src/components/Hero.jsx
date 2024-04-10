@@ -67,8 +67,7 @@ export const Hero = ({ setActive }) => {
                 />
               </span>
             )}
-            <br />
-            <span className="text-orange-300">known as Hyper</span>
+            <br />{" "}
           </motion.p>
         </motion.div>
       </div>
