@@ -54,8 +54,7 @@ const About = () => {
               circles. Outside of coding, my creativity thrives in drawing,
               photography and 3D modeling, enhancing my problem-solving skills.
               I value collaboration and am always ready to join forces with
-              talented individuals to bring innovative ideas to life. Translated
-              with DeepL.com (free version)
+              talented individuals to bring innovative ideas to life.
             </p>
           </motion.div>
           <motion.div
