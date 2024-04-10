@@ -48,7 +48,7 @@ const About = () => {
           >
             <p className="max-w-4xl sm:text-[18px] text-[16px]">
               Hi, I'm <span className="text-emerald-300">Jakub</span>, a
-              passionate programmer with 3 years of experience in website
+              passionate programmer with 4 years of experience in website
               development. I'm always excited to dive into new projects and love
               to explore the latest technologies. I have a keen eye for detail
               and take pride in writing clean, efficient, and maintainable code.

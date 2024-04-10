@@ -34,7 +34,10 @@ const Tech = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.25 }}
-          className="text-center pt-4">Tap to expand!</motion.p>
+          className="text-center pt-4"
+        >
+          Tap to expand!
+        </motion.p>
 
         <motion.div
           className={`${styles.paddingX} flex justify-center py-6`}
@@ -74,7 +77,7 @@ const Tech = () => {
           viewport={{ once: true, amount: 0.25 }}
           className={`${styles.paddingX} py-8`}
         >
-          <p className="text-white underline underline-offset-4 text-center">
+          <p className="text-white underline underline-offset-4 text-center lg:mx-32">
             Please note that some of the technologies used in my personal
             projects may not reflect my professional level of expertise.
             However, I am constantly learning and improving my skills, and I am
@@ -98,9 +101,14 @@ const Tech = () => {
               variants={technlogyVariant}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.25 }}>
-              <h2 className="text-2xl font-bold mb-4 pb-8 text-center">{selectedTech.name}</h2>
-              <p className="text-orange-300 text-lg px-4">{selectedTech.description}</p>
+              viewport={{ once: true, amount: 0.25 }}
+            >
+              <h2 className="text-2xl font-bold mb-4 pb-8 text-center">
+                {selectedTech.name}
+              </h2>
+              <p className="text-orange-300 text-lg px-4">
+                {selectedTech.description}
+              </p>
             </motion.div>
             <div className="flex justify-end">
               <button
