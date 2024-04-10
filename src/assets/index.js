@@ -5,7 +5,6 @@ import headshot from "./headshot.png";
 import wip from "./icons8-work-process-64.png";
 import warning from "./icons8-low-risk-100.png";
 
-import blender from "./frameworks/icons8-blender-3d.jpg";
 import docker from "./frameworks/icons8-docker.jpg";
 import express from "./frameworks/icons8-expressjs.jpg";
 import javascript from "./frameworks/icons8-javascript.jpg";
@@ -30,7 +29,6 @@ export {
   menu,
   headshot,
   wip,
-  blender,
   docker,
   express,
   javascript,
