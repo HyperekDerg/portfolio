@@ -47,9 +47,9 @@ const MobileOrientationAlert = () => {
   return showAlert ? (
     <div className="h-screen flex flex-col justify-center px-8">
       <p className="text-lg text-center pt-20 text-white">
-        Hi there! <span className="text-blue-500">I've noticed</span> that you're
-        currently viewing this website on your mobile device in landscape mode.
-        For the best viewing experience, I recommend{" "}
+        Hi there! <span className="text-blue-500">I've noticed</span> that
+        you're currently viewing this website on your mobile device in landscape
+        mode. For the best viewing experience, I recommend{" "}
         <span className="text-green-500">
           rotating your device to portrait mode
         </span>

@@ -2,8 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import { sectionVariant } from "../utils/motion";
-import { wip } from "../assets";
 import { styles } from "../styles";
+import { work } from "../constants";
 
 const Works = () => {
   return (
@@ -27,15 +27,38 @@ const Works = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.25 }}
         >
-          <motion.img
-            src={wip}
-            alt="Still working on it"
-            className="w-8 h-8"
-            initial={{ rotate: 0 }}
-            animate={{ rotate: 360 }}
-            transition={{ duration: 4, repeat: Infinity, repeatType: "loop" }}
-          />
-          <p>&nbsp;Section under construction, check back later!</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {work.map((project) => (
+              <div
+                key={project.name}
+                className="flex flex-col items-center p-8 border rounded-2xl border-lime-700 shadow-2xl shadow-lime-600"
+              >
+                <h3 className="text-lg text-center pb-2">{project.name}</h3>
+                <img
+                  src={project.image}
+                  alt={`Project ${project.name}`}
+                  className="rounded-lg w-full h-auto sm:w-auto sm:h-48"
+                />
+                <p className="mt-4 text-center">
+                  {project.starting_year} - {project.ending_year}
+                </p>
+                <p className="mt-4 text-center">
+                  Used technologies: {project.technology}
+                </p>
+                <p className="mt-4 text-orange-300">{project.description}</p>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-col items-center"
+                >
+                  <p className="mt-4 text-center bg-slate-600 p-4 rounded-lg">
+                    Tap me to visit project!
+                  </p>
+                </a>
+              </div>
+            ))}
+          </div>
         </motion.div>
       </section>
     </>

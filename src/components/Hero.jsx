@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { styles } from "../styles";
 import { StationsCanvas } from "./canvas";
 
-export const Hero = ({ setActive}) => {
+export const Hero = ({ setActive }) => {
   const [showTypewriter, setShowTypewriter] = useState(false);
 
   useEffect(() => {
@@ -15,7 +15,7 @@ export const Hero = ({ setActive}) => {
 
     return () => {
       clearTimeout(timer);
-    }
+    };
   }, []);
 
   return (
@@ -56,24 +56,19 @@ export const Hero = ({ setActive}) => {
                   words={[
                     "React & Vue Programmer",
                     "Backend Developer",
-                    "3D Artist",
-                    "Photographer",
                     "Database Administrator",
-                    "Digital Artist",
-                    "Scalie Lover <3",
+                    "Photographer",
                   ]}
                   typeSpeed={50}
                   deleteSpeed={20}
-                  delaySpeed={3000}
+                  delaySpeed={5000}
                   loop
                   cursor={true}
                 />
               </span>
             )}
             <br />
-            <span className="text-orange-300">
-              known as Hyper <span title="Dragon :>">🐉</span>.
-            </span>
+            <span className="text-orange-300">known as Hyper</span>
           </motion.p>
         </motion.div>
       </div>

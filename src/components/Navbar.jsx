@@ -30,8 +30,7 @@ const Navbar = ({ setActive, active }) => {
         >
           <img src={logo} alt="logo" className="w-16 h-16 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer border-white border-l-4 rounded-sm uppercase">
-            &nbsp; Hyper{" "}
-            <span className="sm:block hidden">&nbsp; Energy Dragon</span>
+            &nbsp; Portfolio{" "}
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
