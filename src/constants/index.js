@@ -157,7 +157,7 @@ const history = [
   {
     name: "Internship at Animativ Software House",
     description:
-      "During my internship at Animativ, I specialized in Drupal backend development while also assisting with some frontend tasks and docker DevOps. Additionally, I worked on programming GMS modules to connect them with smart house applications.",
+      "During my internship at Animativ, I specialized in Drupal backend development while also assisting with some frontend tasks and docker DevOps. Additionally, I worked on programming GSM modules to connect them with smart house applications.",
     startDate: "Jul 2022",
     endDate: "Aug 2022",
     location: "Mińsk Mazowiecki, Poland",
