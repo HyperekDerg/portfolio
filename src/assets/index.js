@@ -20,7 +20,10 @@ import php from "./frameworks/icons8-php.jpg";
 import manjaro from "./frameworks/manjaro-logo.jpg";
 import kali from "./frameworks/icons8-kali.jpg";
 import windows from "./frameworks/icons8-windows.jpg";
-
+import laravel from "./frameworks/laravel.jpg";
+import java from "./frameworks/java.jpg";
+import cpp from "./frameworks/cpp.jpg";
+import makefile from "./frameworks/makefile.jpg";
 import hiveHub from "./projects/HiveHub.png";
 
 export {
@@ -46,4 +49,8 @@ export {
   windows,
   warning,
   hiveHub,
+  laravel,
+  java,
+  cpp,
+  makefile,
 };

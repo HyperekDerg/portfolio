@@ -15,6 +15,10 @@ import {
   kali,
   windows,
   hiveHub,
+  laravel,
+  java,
+  cpp,
+  makefile,
 } from "../assets";
 
 const navLinks = [
@@ -38,22 +42,46 @@ const navLinks = [
 
 const technologies = [
   {
+    name: "Java",
+    icon: java,
+    description:
+      "Proficient in Java programming, with a focus on developing applications using the Spring framework. Skilled in object-oriented programming (OOP) and capable of creating basic applications by leveraging object-oriented principles. Experienced in utilizing Spring to simplify application development and manage dependencies effectively. Familiar with creating simple web applications and backend systems using Java and Spring.",
+  },
+  {
+    name: "C++",
+    icon: cpp,
+    description:
+      "Experienced in C++ programming, adept at crafting console applications with and without object-oriented design. Proficient in leveraging object-oriented principles to create modular and maintainable code structures when necessary. Skilled in optimizing code for performance and efficiency, with a focus on understanding memory management and implementing algorithmic optimizations. Knowledgeable in configuring and handling C++ builds across different systems, ensuring compatibility and seamless deployment.",
+  },
+  {
+    name: "Makefile",
+    icon: makefile,
+    description:
+      "Proficient in crafting Makefiles to streamline the development workflow, capable of automating tasks such as running containers, recompiling code, cleaning, and preparing the development environment. Skilled in writing efficient and modular Makefiles that enable developers to quickly build, test, and deploy applications across different environments.",
+  },
+  {
+    name: "Docker",
+    icon: docker,
+    description:
+      "Proficient in the Docker containerization platform, adept at creating and managing container images to streamline application deployment. Skilled in utilizing Docker Compose for orchestrating multi-container environments, simplifying the setup of complex application stacks.",
+  },
+  {
     name: "HTML 5",
     icon: html,
     description:
-      "Able to create complex HTML structures and utilize HTML5 features like semantic markup, form validation, and multimedia embedding.",
+      "Skilled in crafting complex HTML structures and leveraging HTML5 features, including semantic markup, advanced form validation, and seamless multimedia embedding. Experienced in optimizing web performance, ensuring cross-browser compatibility, and integrating responsive design principles to enhance user experience across all devices. Proficient in using modern tools and frameworks to streamline development and maintain clean, maintainable code.",
   },
   {
     name: "JavaScript",
     icon: javascript,
     description:
-      "Possess a fundamental understanding of JavaScript syntax, including variables, loops, and functions. Developing the ability to apply programming concepts to practical applications and beginning to explore more advanced features and libraries in JavaScript.",
+      "Possess a strong grasp of JavaScript syntax, including variables, loops, and functions. Adept at applying fundamental programming concepts to practical applications, with a growing proficiency in advanced features and libraries. Continuously exploring modern JavaScript frameworks and tools to enhance development efficiency and create dynamic, interactive web experiences.",
   },
   {
     name: "ExpressJS",
     icon: express,
     description:
-      "Familiar with creating web applications using ExpressJS, routing, middleware, and handling HTTP requests.",
+      "Familiar with creating web applications using Express.js, including routing, middleware, and handling HTTP requests. Proficient in developing server-side logic and integrating with databases to build functional and efficient applications.",
   },
   {
     name: "Vue JS",
@@ -65,7 +93,7 @@ const technologies = [
     name: "React JS",
     icon: react,
     description:
-      "Familiar with ReactJS framework, virtual DOM, JSX syntax, and building complex UI components.",
+      "Familiar with the React.js framework, including virtual DOM, JSX syntax, and building complex UI components. Capable of creating dynamic and responsive user interfaces that enhance user experience. Experienced in state management using tools like Redux and Context API, as well as integrating RESTful APIs to build robust front-end applications. Proficient in optimizing performance and ensuring code maintainability through modular and reusable component design.",
   },
   {
     name: "Node JS",
@@ -77,19 +105,19 @@ const technologies = [
     name: "Tailwind CSS",
     icon: tailwind,
     description:
-      "Familiar with using TailwindCSS utility-first CSS framework to style web applications, and creating custom designs using its extensive class library.",
+      "Proficient in leveraging the Tailwind CSS framework to style web applications efficiently. Skilled in crafting custom designs utilizing its extensive class library, ensuring a streamlined and consistent visual experience across projects. Experienced in optimizing CSS code for improved maintainability and scalability, while also embracing Tailwind's flexibility to accommodate unique design requirements.",
   },
   {
     name: "CSS3",
     icon: css3,
     description:
-      "Able to create responsive layouts, implement animations and transitions, and use preprocessors like Sass or Less.",
+      "Able to create responsive layouts, implement animations, and transitions with CSS3. Proficient in utilizing preprocessors like Sass or Less to enhance workflow efficiency and maintain clean, modular code. Skilled in harnessing the power of CSS variables to streamline design consistency and facilitate easy theme customization.",
   },
   {
     name: "MariaDB",
     icon: mariadb,
     description:
-      "Familiar with MariaDB database, SQL syntax, and basic database administration.",
+      "Familiar with the MariaDB database management system, proficient in SQL syntax, and basic database administration tasks. Capable of designing and implementing relational database structures, optimizing queries for performance, and ensuring data integrity. Experienced in database maintenance, including backups, user management, and troubleshooting common issues.",
   },
   {
     name: "MongoDB",
@@ -98,22 +126,22 @@ const technologies = [
       "Familiar with MongoDB NoSQL database, document-oriented data model, and querying documents using MongoDB Compass.",
   },
   {
-    name: "Docker",
-    icon: docker,
-    description:
-      "Familiar with Docker containerization platform, creating and managing container images, and deploying applications using Docker Compose.",
-  },
-  {
     name: "PHP",
     icon: php,
     description:
-      "Familiar with PHP programming language, server-side scripting, and building dynamic web pages and applications.",
+      "Proficient in the PHP programming language, specializing in server-side scripting and dynamic web page and application development. Skilled in leveraging PHP frameworks like Laravel to expedite development and ensure code maintainability. Experienced in implementing secure authentication, handling database interactions, and integrating third-party APIs to create robust and scalable web solutions.",
+  },
+  {
+    name: "Laravel",
+    icon: laravel,
+    description:
+      "Proficient in developing robust applications using Laravel 9+. Skilled in creating RESTful APIs and designing efficient database structures, complete with seed data for testing and deployment.",
   },
   {
     name: "Manjaro Linux",
     icon: manjaro,
     description:
-      "Experienced with Linux system administration, including managing users and groups, setting up networking, and configuring services.",
+      "Experienced in utilizing Manjaro Linux as the primary development environment, proficient in leveraging its robust features for seamless software development. Skilled in Linux system administration, including managing users and groups, configuring networking, and setting up services tailored to development needs. Capable of optimizing the development workflow through customizations and integrating development tools effectively. Experienced in maintaining system stability and security, ensuring an efficient and reliable environment for software development projects.",
   },
   {
     name: "Kali Linux",
@@ -125,7 +153,7 @@ const technologies = [
     name: "Windows",
     icon: windows,
     description:
-      "Proficient in scripting and automation with PowerShell, managing Windows Server roles and services, and optimizing system performance and security.",
+      "Proficient in scripting and automation using PowerShell, with a focus on managing Windows Server roles and services. Skilled in optimizing system performance and security measures to ensure the smooth operation of Windows-based environments. Experienced in diagnosing and resolving OS issues, including configuration errors and system crashes, to maintain system stability. Capable of configuring basic Windows Server services such as DNS, DHCP, and file sharing, and adept at implementing Group Policy for centralized management and security enforcement.",
   },
 ];
 
